@@ -1,0 +1,306 @@
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: GhostWhite;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #3e8e41;
+  transition: 0.3s;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+header {
+  width: 100%;
+  height: 470px;
+}
+
+.container {
+  background-image: url(https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-position-y: center;
+  height: 100%;
+}
+
+#cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.icon {
+  display: none;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.topnav ul:nth-of-type(1) {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.topnav ul:nth-of-type(2) {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* how it works */
+.main-heading {
+  text-align: center;
+}
+.main-h1 {
+  margin-bottom: 0;
+}
+
+.main-para {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.features {
+  display: flex;
+  padding: 20px;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.features figure {
+  width: 200px;
+}
+
+.features figure img {
+  width: 100%;
+}
+
+/* review */
+
+.review-container {
+  height: auto;
+}
+.title {
+  text-align: center;
+  margin: 0;
+}
+
+.heading {
+  margin: 0.5rem auto;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(19, 137, 226);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review {
+  margin: 0.5rem auto;
+  height: 10rem;
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.caption {
+  width: 30rem;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.person-name {
+  margin: 0.5rem auto;
+  text-transform: capitalize;
+}
+
+.job-title {
+  margin: 0.5rem auto;
+}
+
+.job-desc {
+  margin: 0.5rem auto;
+}
+.btn {
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.prev-btn,
+.next-btn {
+  color: rgb(219, 42, 42);
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* footer */
+.footer {
+  background-color: #282c35;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-row {
+  max-width: 100%;
+  display: flex;
+  margin-left: 6%;
+  justify-content: space-between;
+  padding-right: 2%;
+}
+
+.footer-horz {
+  max-width: 100%;
+  display: flex;
+  margin-left: 6%;
+}
+
+.footer-horz li {
+  margin-right: 50px;
+}
+
+/* mobile breakpoints */
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    height: 400px;
+  }
+
+  .container {
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: cover;
+    position: relative;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .features figure {
+    width: 200px;
+  }
+  .features figure img {
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 1.5rem;
+    height: 30px;
+    width: 13rem;
+  }
+
+  .icono {
+    background-color: rgb(203, 173, 122);
+  }
+  .topnav {
+    display: none;
+  }
+
+  .topnav.responsive {
+    margin-top: 30px;
+    display: block;
+    width: 13rem;
+    background-color: rgb(34, 130, 194);
+    position: relative;
+    opacity: 0.9;
+  }
+
+  .brand {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin-top: 15px;
+    width: 79%;
+    padding-left: 2%;
+  }
+
+  .topnav.responsive ul:nth-of-type(1) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding-left: 2%;
+  }
+
+  .topnav.responsive ul:nth-of-type(2) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding-left: 2%;
+  }
+
+  .list {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .link {
+    display: inline-block;
+    width: 77%;
+  }
+
+  #cont {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
